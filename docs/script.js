@@ -1,4 +1,4 @@
-const options = ["Lapis","Papyrus","Scalpellus"];
+const options = ["Rock","Paper","Scissors"];
 
 const player = {
   playerChoice : null
@@ -15,16 +15,12 @@ const computerChooses = () => {
 
 let playerGuess = 0;
 
-while (playerGuess  < 0 || playerGuess > 2) {
-  playerGuess = prompt("Pick a number between 0 and 2");
-}
-
 player.playerChoice = playerGuess;
 
 const result = (message) => {
   const announcement = document.createElement('h3');
   announcement.innerText = message
-  const page = document.querySelector('body');
+  const page = document.querySelector('#resultAnswer');
   page.append(announcement);
 }
 
@@ -44,24 +40,24 @@ const compareChoices = (comp, user) => {
 }
 }
 
-const choseLapis = () => {
-  const answer = document.querySelector("#lapis").innerText;
+const choseRock = () => {
+  const answer = "Rock";
   playersAnswer(answer);
 }
 
-const chosePapyrus = () => {
-  const answer = document.querySelector("#papyrus").innerText;
+const chosePaper = () => {
+  const answer = "Paper";
   playersAnswer(answer);
 }
 
-const choseScalpellus = () => {
-  const answer = document.querySelector("#scalpellus").innerText;
+const choseScissors = () => {
+  const answer = "Scissors"
   playersAnswer(answer);
 }
 
-document.querySelector("#lapis").addEventListener("click", choseLapis);
-document.querySelector("#papyrus").addEventListener("click", chosePapyrus);
-document.querySelector("#scalpellus").addEventListener("click", choseScalpellus);
+document.querySelector("#rock").addEventListener("click", choseRock);
+document.querySelector("#paper").addEventListener("click", chosePaper);
+document.querySelector("#scissors").addEventListener("click", choseScissors);
 
 const playersAnswer = (answer) => {
   const previousAnswer = document.querySelector("h3");

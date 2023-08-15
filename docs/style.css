@@ -12,3 +12,21 @@ button {
       background-color:rgba(166,167,208,0.65);
       padding: 50px;
     }
+#rock {
+  background-image: url("https://i.imgur.com/8GvesWK.jpeg");
+  background-size: 140px 140px;
+  height: 140px;  
+  width: 140px;
+}
+#paper {
+  background-image: url("https://i.imgur.com/Qlwxpw6.jpeg");
+  background-size: 140px 140px;
+  height: 140px;  
+  width: 140px;
+}
+#scissors {
+  background-image: url("https://i.imgur.com/McyoDRK.png");
+  background-size: 140px 140px;
+  height: 140px;  
+  width: 140px;
+}
