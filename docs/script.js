@@ -8,11 +8,6 @@ const computer = {
   computerChoice : null
 }
 
-const computerChooses = () => {
-  randomNum = Math.floor(Math.random() * 3);
-  return randomNum
-}
-
 let playerGuess = 0;
 
 player.playerChoice = playerGuess;
@@ -39,6 +34,7 @@ const compareChoices = (comp, user) => {
     result ("The " + winner + " wins! " + message);
 }
 }
+;
 
 const choseRock = () => {
   const answer = "Rock";
@@ -58,6 +54,7 @@ const choseScissors = () => {
 document.querySelector("#rock").addEventListener("click", choseRock);
 document.querySelector("#paper").addEventListener("click", chosePaper);
 document.querySelector("#scissors").addEventListener("click", choseScissors);
+
 
 const playersAnswer = (answer) => {
   const previousAnswer = document.querySelector("h3");
