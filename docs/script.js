@@ -45,3 +45,6 @@ const displayResult = (message) => {
 
 // add functionality to keep track of scores
 // and test how often each player wins
+// also add a graph to track player vs computer wins / losses
+// and a self playing mode where the game just executes
+// update pics!
