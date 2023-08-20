@@ -42,3 +42,6 @@ const displayResult = (message) => {
   const page = document.querySelector('#resultAnswer');
   page.append(announcement);
 }
+
+// add functionality to keep track of scores
+// and test how often each player wins
